@@ -41,10 +41,10 @@ export default function App() {
         alignItems: 'center',
         justifyContent: 'space-around',
       }}>
-      <Text>Your expo push token: {expoPushToken}</Text>
+      
       <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Title: {notification && notification.request.content.title} </Text>
-        <Text>Body: {notification && notification.request.content.body}</Text>
+        <Text> {notification && notification.request.content.title} </Text>
+        <Text>{notification && notification.request.content.body}</Text>
         
         {notification && notification.request.content.data && notification.request.content.data.image ? (
     <ImageBackground
